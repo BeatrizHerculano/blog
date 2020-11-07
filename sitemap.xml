@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/tags/basico/</loc>
+    <lastmod>2020-11-06T23:04:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/</loc>
+    <lastmod>2020-11-06T23:04:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/tags/flutter/</loc>
+    <lastmod>2020-11-06T23:04:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/flutter-widgets/</loc>
+    <lastmod>2020-11-06T23:04:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/tags/mobile/</loc>
+    <lastmod>2020-11-06T23:04:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/tags/</loc>
+    <lastmod>2020-11-06T23:04:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biaherculano.dev/blog/categories/</loc>
+  </url>
+  
+</urlset>

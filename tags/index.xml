@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Beatriz Herculano</title>
+    <link>https://biaherculano.dev/blog/tags/</link>
+    <description>Recent content in Tags on Beatriz Herculano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 06 Nov 2020 23:04:01 -0300</lastBuildDate><atom:link href="https://biaherculano.dev/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>basico</title>
+      <link>https://biaherculano.dev/blog/tags/basico/</link>
+      <pubDate>Fri, 06 Nov 2020 23:04:01 -0300</pubDate>
+      
+      <guid>https://biaherculano.dev/blog/tags/basico/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flutter</title>
+      <link>https://biaherculano.dev/blog/tags/flutter/</link>
+      <pubDate>Fri, 06 Nov 2020 23:04:01 -0300</pubDate>
+      
+      <guid>https://biaherculano.dev/blog/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>https://biaherculano.dev/blog/tags/mobile/</link>
+      <pubDate>Fri, 06 Nov 2020 23:04:01 -0300</pubDate>
+      
+      <guid>https://biaherculano.dev/blog/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

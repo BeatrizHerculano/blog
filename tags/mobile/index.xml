@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Beatriz Herculano</title>
+    <link>https://biaherculano.dev/blog/tags/mobile/</link>
+    <description>Recent content in mobile on Beatriz Herculano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Fri, 06 Nov 2020 23:04:01 -0300</lastBuildDate><atom:link href="https://biaherculano.dev/blog/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iniciando com Flutter - Widgets</title>
+      <link>https://biaherculano.dev/blog/flutter-widgets/</link>
+      <pubDate>Fri, 06 Nov 2020 23:04:01 -0300</pubDate>
+      
+      <guid>https://biaherculano.dev/blog/flutter-widgets/</guid>
+      <description>Introdução O que é flutter? Flutter é um SDK para desenvolvimento de aplicativos multiplataforma e aplicações web criada pela Google.
+Eu comecei estudando flutter sem nunca ter programado com componentes, então vários conceitos eram estranhos para mim, o principal foi o conceito e uso de Widgets.
+Ao ler a [documentação do flutter] (https://flutter.dev/docs/development/ui/widgets-intro), me deparei com a seguinte definição de widget:
+ Widgets describe what their view should look like given their current configuration and state.</description>
+    </item>
+    
+  </channel>
+</rss>

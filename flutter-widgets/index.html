@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Iniciando com Flutter - Widgets | Beatriz Herculano</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="Quando eu comecei a usar Flutter a minha maior duvida sempre foi: O que são esses Widgets?">
+  <meta name="keywords" content="flutter , widgets">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Iniciando com Flutter - Widgets" />
+  <meta name="twitter:description" content="Quando eu comecei a usar Flutter a minha maior duvida sempre foi: O que são esses Widgets?"/>
+  <meta name="twitter:site" content="@biaherculanodev" />
+  <meta name="twitter:creator" content="https://twitter.com/biaherculanodev" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/blog/css/post.min.6e6f26da538ad6e7fe753d67d6d5a28c55e89d5709f8361339b125d360134239.css" integrity="sha256-bm8m2lOK1uf&#43;dT1n1tWijFXonVcJ&#43;DYTObEl02ATQjk="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/blog/css/custom.min.fbc61c1350be40c579272b2046b824c9b8721fcfd5aaa7476397fb057e847448.css" integrity="sha256-&#43;8YcE1C&#43;QMV5JysgRrgkybhyH8/VqqdHY5f7BX6EdEg="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/biaherculano.dev\/blog\/flutter-widgets\/",
+      "name": "Iniciando com Flutter - Widgets",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": "Quando eu comecei a usar Flutter a minha maior duvida sempre foi: O que são esses Widgets?"
+    }
+  
+  </script>
+</head>
+
+<body>
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        
+      <div class="post__image" style="background-image: url(/images/blog/lego.jpg);">
+      </div>
+      
+        <div class="post">
+          <header class="post__header">
+
+            <h1 id="post__title">Iniciando com Flutter - Widgets</h1>
+            <time datetime="2020-11-06 23:04:01 -0300 -03" class="post__date">Nov 6 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="introdução">Introdução<a class="anchor" href="#introdução">#</a></h2>
+<h4 id="o-que-é-flutter">O que é flutter?</h4>
+<p><a href="https://dev.to/flutter/o-que-e-o-flutter-e-dart-e25">Flutter é um SDK para desenvolvimento de aplicativos multiplataforma e aplicações web criada pela Google.</a></p>
+<p>Eu comecei estudando flutter sem nunca ter programado com componentes, então vários conceitos eram estranhos para mim, o principal foi o conceito e uso de Widgets.</p>
+<p>Ao ler a [documentação do flutter]
+(<a href="https://flutter.dev/docs/development/ui/widgets-intro),">https://flutter.dev/docs/development/ui/widgets-intro),</a> me deparei com a seguinte definição de widget:</p>
+<blockquote>
+<p>Widgets describe what their view should look like given their current configuration and state. When a widget’s state changes, the widget rebuilds its description, which the framework diffs against the previous description in order to determine the minimal changes needed in the underlying render tree to transition from one state to the next.</p>
+</blockquote>
+<p>Em uma tradução livre:</p>
+<blockquote>
+<p>Widgets são estruturas que descrevem como a sua visualização deve ser, conforme o sua configuração e estado atual. Quando o estado de um widget muda, o ele reconstrói sua descrição, a qual o framework compara com a diferença da descrição anterior, para determinar as mudanças mínimas na árvore de renderização ao transitar de um estado para outro.</p>
+</blockquote>
+<p>O trecho traz o conceito de widget, porém não traz a informação de como ele é usado para a construção do app em flutter.</p>
+<p>O objetivo desse artigo é trazer de forma clara o conceito de widgets, sejam eles imutáveis ou mutáveis. E passar uma visão do que é construir um aplicativo em flutter usando eles.</p>
+<p>#Árvore de Renderização</p>
+<p>A primeira coisa para se entender é que todo item visual em um app em flutter é um widget dentro do outro:
+Se eu quiser um texto centralizado eu coloco um widget Text dentro de um Center. Inclusive, seu app em si vai ser um Widget com outros dentro dele.</p>
+<p>Quando o Widget exterior tem seu estado modificado, ele reconstrói os Widgets interiores a ele, ou seja, sua árvore de renderização.</p>
+<p>#Imutáveis
+Chamados de “StatelessWidgets” é um objeto que se constrói uma vez e não tem informações de como se reconstruir. Então ele não vai afetar a sua árvore de renderização.</p>
+<p>Um exemplo de um widget imutável ou Stateless é o Text. Ele é um widget que recebe um parâmetro string/texto e monta um objeto visual onde esse valor é transformado em uma label e exibido na tela.</p>
+<pre><code class="language-dart">Text( 'Esse é um texto imutável',);
+</code></pre>
+<p>Ele, por si só nunca muda seu texto sozinho, se ele foi construído uma vez, ele não tem capacidade de se reconstruir com um valor de texto novo.</p>
+<p>#Mutáveis</p>
+<p>O chamado de “StatefulWidget” é um objeto que tem objeto de State. Esse objeto representa situação atual do widget, que pode ser modificada conforme o tempo ou conforme coisas acontecem no seu app. Esse estado sabe se reconstruir, afetando todos os Widgets dentro dele, ou seja, sua árvore de renderização.</p>
+<p>Se eu tenho um aplicativo onde um botão é clicado para mudar o valor do Widget, deve ser indicado que o estado dele mudou, usando o método setState. Assim nos forçamos o objeto a se reconstruir e, também, a todos os Widgets que tem dentro dele, inclusive os imutáveis. Se você quiser saber mais em como o setState afeta o desempenho do app veja a <a href="https://flutter.dev/docs/testing/best-practices">documentação</a>.</p>
+<p>Você pode entender melhor com o exemplo:</p>
+<pre><code class="language-dart">class Counter extends StatefulWidget {
+  @override
+  _CounterState createState() =&gt; _CounterState();
+}
+ 
+class _CounterState extends State&lt;Counter&gt; {
+  int _counter = 0;
+ 
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+ 
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: &lt;Widget&gt;[
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.display1,
+            ),
+            FloatingActionButton(
+              onPressed: _incrementCounter,
+              tooltip: 'Increment',
+              child: Icon(Icons.add),
+            )
+          ],
+        ),
+      ),
+      color: Colors.white,
+    );
+  }
+}
+</code></pre>
+<p>Nos temos um StatefulWidget que tem tem uma variável int, um objeto Text e um botão. Quando eu clico no botão a eu somo 1 ao meu número, e sinalizo que o estado do meu widget foi modificado, usando o setState. Assim ele força e reconstrução do meu objeto Text dentro dele com o novo valor do meu número.</p>
+<p>#Conclusão</p>
+<p>No final, construir um app em flutter é usar  StatefulWidgets que forçam a reconstrução de StatelessWidgets.</p>
+<p><em>Meus agradecimento a Filipe Pereira, um grande amigo.</em></p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://biaherculano.dev/blog/tags/mobile/">mobile</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://biaherculano.dev/blog/tags/flutter/">flutter</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://biaherculano.dev/blog/tags/basico/">basico</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="Twitter"
+         href="https://twitter.com/biaherculanodev"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://biaherculano.dev/blog/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/beatrizherculano"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://biaherculano.dev/blog/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:hi@biaherculano.dev"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://biaherculano.dev/blog/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/beatriz-herculano/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://biaherculano.dev/blog/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/blog/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
