@@ -113,7 +113,7 @@
 </blockquote>
 <p>O trecho traz o conceito de widget, porém não traz a informação de como ele é usado para a construção do app em flutter.</p>
 <p>O objetivo desse artigo é trazer de forma clara o conceito de widgets, sejam eles imutáveis ou mutáveis. E passar uma visão do que é construir um aplicativo em flutter usando eles.</p>
-<p>#Árvore de Renderização</p>
+<h1 id="árvore-de-renderização">Árvore de Renderização</h1>
 <p>A primeira coisa para se entender é que todo item visual em um app em flutter é um widget dentro do outro:
 Se eu quiser um texto centralizado eu coloco um widget Text dentro de um Center. Inclusive, seu app em si vai ser um Widget com outros dentro dele.</p>
 <p>Quando o Widget exterior tem seu estado modificado, ele reconstrói os Widgets interiores a ele, ou seja, sua árvore de renderização.</p>
@@ -123,7 +123,7 @@ Chamados de “StatelessWidgets” é um objeto que se constrói uma vez e não 
 <pre><code class="language-dart">Text( 'Esse é um texto imutável',);
 </code></pre>
 <p>Ele, por si só nunca muda seu texto sozinho, se ele foi construído uma vez, ele não tem capacidade de se reconstruir com um valor de texto novo.</p>
-<p>#Mutáveis</p>
+<h1 id="mutáveis">Mutáveis</h1>
 <p>O chamado de “StatefulWidget” é um objeto que tem objeto de State. Esse objeto representa situação atual do widget, que pode ser modificada conforme o tempo ou conforme coisas acontecem no seu app. Esse estado sabe se reconstruir, afetando todos os Widgets dentro dele, ou seja, sua árvore de renderização.</p>
 <p>Se eu tenho um aplicativo onde um botão é clicado para mudar o valor do Widget, deve ser indicado que o estado dele mudou, usando o método setState. Assim nos forçamos o objeto a se reconstruir e, também, a todos os Widgets que tem dentro dele, inclusive os imutáveis. Se você quiser saber mais em como o setState afeta o desempenho do app veja a <a href="https://flutter.dev/docs/testing/best-practices">documentação</a>.</p>
 <p>Você pode entender melhor com o exemplo:</p>
@@ -166,7 +166,7 @@ class _CounterState extends State&lt;Counter&gt; {
 }
 </code></pre>
 <p>Nos temos um StatefulWidget que tem tem uma variável int, um objeto Text e um botão. Quando eu clico no botão a eu somo 1 ao meu número, e sinalizo que o estado do meu widget foi modificado, usando o setState. Assim ele força e reconstrução do meu objeto Text dentro dele com o novo valor do meu número.</p>
-<p>#Conclusão</p>
+<h1 id="conclusão">Conclusão</h1>
 <p>No final, construir um app em flutter é usar  StatefulWidgets que forçam a reconstrução de StatelessWidgets.</p>
 <p><em>Meus agradecimento a Filipe Pereira, um grande amigo.</em></p>
 
@@ -190,6 +190,11 @@ class _CounterState extends State&lt;Counter&gt; {
  <div class="pagination">
   
 
+  
+    <a class="pagination__item" href="https://biaherculano.dev/blog/o-que-voce-deve-saber-para-ser-mais-que-um-bom-programador/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >O que você deve saber para ser mais que um bom programador</a>
+    </a>
   
 </div>
 

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Fri, 06 Nov 2020 23:04:01 -0300</lastBuildDate><atom:link href="https://biaherculano.dev/blog/tags/basico/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Nov 2020 21:52:54 -0300</lastBuildDate><atom:link href="https://biaherculano.dev/blog/tags/basico/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O que você deve saber para ser mais que um bom programador</title>
+      <link>https://biaherculano.dev/blog/o-que-voce-deve-saber-para-ser-mais-que-um-bom-programador/</link>
+      <pubDate>Thu, 12 Nov 2020 21:52:54 -0300</pubDate>
+      
+      <guid>https://biaherculano.dev/blog/o-que-voce-deve-saber-para-ser-mais-que-um-bom-programador/</guid>
+      <description>Conversando com um amigo sobre carreira na area de TI, ele me perguntou algo que eu sempre me perguntei: &amp;lsquo;Como eu me torno um programador melhor? O que eu Preciso aprender?&amp;rsquo;
+Não existe uma formula mágica, apenas você sabe o que você precisa reforçar, mas existem tópicos que todo bom programador deveria aprender. Não apenas sobre técnicas mirabolantes como TDD, DDD, POO, mas também soft skills como negociação, facilitação de reuniões e trabalho em equipe.</description>
+    </item>
+    
     <item>
       <title>Iniciando com Flutter - Widgets</title>
       <link>https://biaherculano.dev/blog/flutter-widgets/</link>

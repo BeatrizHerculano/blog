@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Fri, 06 Nov 2020 23:04:01 -0300</lastBuildDate><atom:link href="https://biaherculano.dev/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Nov 2020 21:52:54 -0300</lastBuildDate><atom:link href="https://biaherculano.dev/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>basico</title>
       <link>https://biaherculano.dev/blog/tags/basico/</link>
-      <pubDate>Fri, 06 Nov 2020 23:04:01 -0300</pubDate>
+      <pubDate>Thu, 12 Nov 2020 21:52:54 -0300</pubDate>
       
       <guid>https://biaherculano.dev/blog/tags/basico/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>carreira</title>
+      <link>https://biaherculano.dev/blog/tags/carreira/</link>
+      <pubDate>Thu, 12 Nov 2020 21:52:54 -0300</pubDate>
+      
+      <guid>https://biaherculano.dev/blog/tags/carreira/</guid>
       <description></description>
     </item>
     
